@@ -1,0 +1,21 @@
+[project]
+name = "crypto-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ubong Jeremiah", email = """
+cubongjeremiah
+@gmail.com""" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mcp>=1.28,<2",
+]
+
+[project.scripts]
+crypto-mcp = "crypto_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
